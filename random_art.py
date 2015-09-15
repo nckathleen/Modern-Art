@@ -10,8 +10,8 @@ def create_expression():
     """This function takes no arguments and returns an expression that
     generates a number between -1.0 and 1.0, given x and y coordinates."""
 
-    expr1 = lambda x, y: int(random.randint(x, y) / sin(x))
-    expr2 = lambda x, y: int(x + (y % 7))
+    expr1 = lambda x, y: int(y(x-3) /15) + sin(x)
+    expr2 = lambda x, y: int(x + sin(x % 7))
     expr3 = lambda x, y: int(tan(y) + y)
     # expr1 = lambda x, y: (x + y)/2
     # expr2 = lambda x, y: (x - y)/2
